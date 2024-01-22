@@ -52,8 +52,21 @@ namespace WS_EF_DBFirst
             if (supplierid != null)
             {
                 lboProducts.ItemsSource = DB.Products.
-                                            Where(x => x.Supplier!=null? x.Supplier.SupplierId == supplierid : false).
-                                            Select(x => x.ProductName).ToList();
+                                            Where(x => x.Supplier!=null? x.Supplier.SupplierId == supplierid : false)
+                                            //.Select(x => x.ProductName)
+                                            .ToList();
+            }
+        }
+
+        private void lboProducts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int? productid = ((Product)lboProducts.SelectedItem)?.ProductId;
+            if(productid != null)
+            {
+                lboCustomer.ItemsSource = DB.OrderDetails.Where(x => x.ProductId == productid)
+                    .Select(x=> x.Order.Customer.ContactName)
+                    .Distinct()
+                    .ToList();
             }
         }
     }
