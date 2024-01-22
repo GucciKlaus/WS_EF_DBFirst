@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34302.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_EF_DBFirst", "WS_EF_DBFirst\WS_EF_DBFirst.csproj", "{17E95DDB-1A9A-449F-B5BE-0EA08D103ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayerLib", "DataLayerLib\DataLayerLib.csproj", "{B7ACCECD-0D4F-497E-AE39-2AC15A3CF250}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17E95DDB-1A9A-449F-B5BE-0EA08D103ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E95DDB-1A9A-449F-B5BE-0EA08D103ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E95DDB-1A9A-449F-B5BE-0EA08D103ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E95DDB-1A9A-449F-B5BE-0EA08D103ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7ACCECD-0D4F-497E-AE39-2AC15A3CF250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7ACCECD-0D4F-497E-AE39-2AC15A3CF250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7ACCECD-0D4F-497E-AE39-2AC15A3CF250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7ACCECD-0D4F-497E-AE39-2AC15A3CF250}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E32CA5F2-EF58-4F40-9E77-1FD0AFAC9020}
+	EndGlobalSection
+EndGlobal
